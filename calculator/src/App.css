@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+/* --------------------------------------Global-------------------------------------- */
+
+
+*,::after,::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+/* --------------------------------------Wrappers-------------------------------------- */
+
+.Background {
+    background-color: var(--Theme1-background-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculator {
+  width: 25rem;
+  padding: 1rem;
+}
+
+/* --------------------------------------Header-------------------------------------- */
+
+
+.calculator-header {
+  margin-bottom: 1.2rem;
+  display: flex;
+  color: var(--Theme1-text-white);
+  justify-content: space-between;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+}
+
+.header-theme-selector {
+  display: flex;
+  font-size: 7px;
+  letter-spacing: .3px;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+ul{
+  display:flex;
+  justify-content: space-between;
+}
+ul>li{
+  list-style: none;
+}
+aside{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 8px;
+
+}
+
+/* ----------------------------Slider--------------------------------- */
+
+
+#selector {
+  height: 0px;
+  margin: 10px 0;
+  width: 3rem;
+}
+#selector:focus {
+  outline: none;
+}
+#selector::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 27px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #1A3E5C;
+  border-radius: 50px;
+  border: 0px solid #000000;
+}
+#selector::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 26px;
+  width: 27px;
+  border-radius: 50px;
+  background: #FF7C30;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: 0.5px;
+}
+#selector:focus::-webkit-slider-runnable-track {
+  background: #1A3E5C;
+}
+#selector::-moz-range-track {
+  padding: 4px;
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background-color: var(--Theme1-background-screen);
+  border-radius: 50px;
+  border: 0px solid #000000;
+}
+#selector::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 12px;
+  width: 12px;
+  border-radius: 50px;
+  background: #FF7C30;
+  cursor: pointer;
+}
+#selector::-ms-track {
+  width: 100%;
+  height: 27px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+#selector::-ms-fill-lower {
+  background-color: var(--Theme1-background-keypad);
+  border: 0px solid #000000;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #000000;
+}
+#selector::-ms-fill-upper {
+  background: #1A3E5C;
+  border: 0px solid #000000;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #000000;
+}
+#selector::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #000000;
+  height: 26px;
+  width: 27px;
+  border-radius: 50px;
+  background: #FF7C30;
+  cursor: pointer;
+}
+#selector:focus::-ms-fill-lower {
+  background: #1A3E5C;
+}
+#selector:focus::-ms-fill-upper {
+  background: #1A3E5C;
+}
+
+
+
+
+/* --------------------------------------Display-------------------------------------- */
+
+
+.calculator-screen {
+  background-color: var(--Theme1-background-screen);
+  height: clamp(5rem,5rem,5rem);
+  margin-bottom: 1.2rem;
+  border-radius: .4rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  color: var(--Theme1-text-white);
+  font-size: 25px;
+  flex-direction: column;
+  text-align: end;
+}
+
+.previous-operand {
+  color: var(--Theme1-text-dark-grayish-blue);
+  font-size: 1.2rem;
+  width: 100%;
+}
+
+.current-operand {
+  font-size: 2rem;
+  width: 100%;
+
+}
+
+/* --------------------------------------Keypad-------------------------------------- */
+
+.calculator-keypad {
+  background-color: var(--Theme1-background-keypad);
+  display: flex;
+  justify-content: center;
+  border-radius: .4rem;
+  height: 22.5rem;
+  padding: .8rem 0;
+}
+
+.keypad-keys {
+  display: flex;
+  flex-wrap:wrap;
+  gap: 1.1rem;
+  justify-content: center;
+  color: var(--Theme1-text-dark-grayish-blue);
+  font-size: 1.2rem;
+  flex-direction: row-reverse;
+}
+
+
+.keys {
+  padding: 0 1.5rem;
+  background-color: var(--Theme1-background-orange);
+  -webkit-box-shadow: 0px 8px 0px 0px var(--Theme1-shadow-orange); 
+  box-shadow: 0px 3px 0px 0px var(--Theme1-shadow-orange);
+  border-radius: .6rem;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+  flex-basis: 10%;
+  font-family: 'League Spartan', sans-serif;
+  text-align: center;
+  font-size: 1.8rem;
+  color: var(  --Theme1-text-dark-grayish-blue);
+}
+
+.del-key {
+  background-color: var(--Theme1-background-darkblue);
+  border-radius: .6rem;
+  -webkit-box-shadow: 0px 8px 0px 0px var(--Theme1-shadow-darkblue); 
+  box-shadow: 0px 3px 0px 0px var(--Theme1-shadow-darkblue);
+  padding: 0 1rem;
+  cursor: pointer;
+  color: var(--Theme1-text-white);
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key-result {
+  background-color: var(--Theme1-background-red);
+  border-radius: .4rem;
+  -webkit-box-shadow: 0px 8px 0px 0px var(--Theme1-shadow-red); 
+  box-shadow: 0px 3px 0px 0px var(--Theme1-shadow-red); 
+  color: var(--Theme1-text-white);
+  cursor: pointer;
+  width:40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.key-reset {
+  background-color: var(--Theme1-background-darkblue);
+  border-radius: .4rem;
+  -webkit-box-shadow: 0px 8px 0px 0px var(--Theme1-shadow-darkblue); 
+  box-shadow: 0px 3px 0px 0px var(--Theme1-shadow-darkblue);
+  color: var(--Theme1-text-white);
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 .4rem;
+}

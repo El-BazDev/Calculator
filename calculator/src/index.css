@@ -1,0 +1,50 @@
+:root {
+/* -----------------------Theme1----------------------- */
+
+  --Theme1-background-main : hsl(222, 26%, 31%);
+  --Theme1-background-keypad : hsl(223, 31%, 20%);
+  --Theme1-background-screen : hsl(224, 36%, 15%);
+
+  --Theme1-text-white :hsl(0, 0%, 100%);
+  --Theme1-text-dark-grayish-blue:hsl(221, 14%, 31%);
+  
+  --Theme1-background-red:hsl(6, 63%, 50%);
+  --Theme1-shadow-red: hsl(6, 70%, 34%);
+  --Theme1-background-orange:hsl(30, 25%, 89%);
+  --Theme1-shadow-orange: hsl(28, 16%, 65%);
+  --Theme1-background-darkblue: hsl(225, 21%, 49%);
+  --Theme1-shadow-darkblue:hsl(224, 28%, 35%);
+
+/* -----------------------Theme2----------------------- */
+
+  --Theme2-background-Lightgray: hsl(0, 0%, 90%);
+  --Theme2-background-Grayishred: hsl(0, 5%, 81%);
+  --Theme2-background-Verylightgray: hsl(0, 0%, 93%);
+
+  --Theme2-text-Dark-moderatecyan: hsl(185, 42%, 37%);
+  --Theme2-text-Very-darkcyan: hsl(185, 58%, 25%);
+  --Theme2-text-Orange: hsl(25, 98%, 40%);
+  --Theme2-text-Darkorange: hsl(25, 99%, 27%);
+  --Theme2-text-Lightgrayishyellow: hsl(45, 7%, 89%);
+  --Theme2-text-Darkgrayishorange: hsl(35, 11%, 61%);
+
+  --Theme2-Verydarkgrayish-yellow: hsl(60, 10%, 19%);
+  --Theme2-White: hsl(0, 0%, 100%);
+
+/* -----------------------Theme3----------------------- */
+
+--Theme3-Verydarkviolet: hsl(268, 75%, 9%);
+--Theme3-Very-dark-violet: hsl(268, 71%, 12%);
+
+--Theme3-Darkviolet: hsl(281, 89%, 26%);
+--Theme3-Vividmagenta: hsl(285, 91%, 52%);
+--Theme3-Purecyan: hsl(176, 100%, 44%);
+--Theme3-Softcyan: hsl(177, 92%, 70%);
+--Theme3-Verydark-violet: hsl(268, 47%, 21%);
+--Theme3-Darkmagenta: hsl(290, 70%, 36%);
+
+--Theme3-Lightyellow: hsl(52, 100%, 62%);
+--Theme3-Verydark-blue: hsl(198, 20%, 13%);
+--Theme3-White: hsl(0, 0%, 100%);
+
+}
